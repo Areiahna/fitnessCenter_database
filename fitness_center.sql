@@ -20,7 +20,8 @@ INSERT INTO Members (name,age)
 VALUES ('Arei', 23),
 ('Justin',19),
 ('Suzy', 45),
-('Jess',21);
+('Jess',21),
+('Deja',26);
 
 SELECT * FROM Members;
 
@@ -38,12 +39,9 @@ WHERE member_id = 4;
 
 SELECT * FROM WorkoutSessions;
 
-SET SQL_SAFE_UPDATES = 0;
-
 DELETE FROM Members 
-WHERE name = 'Justin';
+WHERE id = 5;
 
-SET SQL_SAFE_UPDATES = 1;
 
 SELECT * FROM Members;
 
